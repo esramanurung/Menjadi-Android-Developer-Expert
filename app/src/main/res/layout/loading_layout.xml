@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/loadingProgress"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="50dp">
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="32dp"
+            app:mk_color="@color/design_default_color_primary"
+            app:mk_type="FishSpinner" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

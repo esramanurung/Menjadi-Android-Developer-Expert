@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="thumbnail_image">thumbnail image</string>
+    <string name="btn_delete">btn delete</string>
+    <string name="gambar_deskripsi">Gambar Deskripsi</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OlehOleh</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_keranjang">Keranjang</string>
+    <string name="fab_content_desc">fab_menu</string>
+    <string name="tambah_ke_keranjang">Tambah ke Keranjang</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="jenis_product">Jenis Product</string>
+    <string name="berat">Berat</string>
+    <string name="informasi_produk">Informasi Produk</string>
+    <string name="imgproduct">imgProduct</string>
+    <string name="detail_produk">Detail Produk</string>
+    <string name="imagebuttonlogo">imageButtonLogo</string>
+    <string name="keranjang_kamu_kosong_nih">Keranjang kamu kosong nih...</string>
+</resources>

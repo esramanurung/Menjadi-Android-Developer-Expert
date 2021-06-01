@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail.DetailProductActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/ic_baseline_arrow_back_24"
+                android:contentDescription="@string/imagebuttonlogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:text="@string/detail_produk"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_card" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imgDetailProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:contentDescription="@string/imgproduct"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtNameProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/lnrPromo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="50dp"
+                                android:layout_height="20dp"
+                                android:background="@color/teal_200"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+                                <TextView
+                                    android:id="@+id/percentagePromo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:gravity="center"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txtPromoPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="16dp"
+                                android:fontFamily="@font/roboto_light"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtCurrentPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="4dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/gray_card" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/informasi_produk"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/berat"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtWeightProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/jenis_product"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtTypeProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto_light"
+                            android:text="@string/deskripsi"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            tools:ignore="SmallSp" />
+
+                        <TextView
+                            android:id="@+id/txtDescriptionProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/gray_card" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/primaryColor"
+                android:text="@string/tambah_ke_keranjang"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_keranjang"
+                app:iconTint="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
